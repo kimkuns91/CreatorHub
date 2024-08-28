@@ -16,7 +16,7 @@ export default function NotFound() {
           onClick={() => router.replace('/')}
           className="bg-rose-500 text-white rounded-xl px-4 py-2.5 hover:shadow-lg"
         >
-          메인으로 돌아가기
+          홈으로 돌아가기
         </button>
       </div>
     </div>
