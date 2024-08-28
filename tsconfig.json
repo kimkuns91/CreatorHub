@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,6 +13,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "types": ["@types/gtag.js"],
     "plugins": [
       {
         "name": "next"
@@ -19,6 +21,12 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "node"
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

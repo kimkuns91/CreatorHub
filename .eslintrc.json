@@ -1,3 +1,8 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  // "rules": {
+  //   "semi": ["error", "always"], // 세미콜론을 항상 사용하도록 설정
+  //   "no-unused-vars": "warn", // 사용하지 않는 변수가 있으면 경고
+  //   "no-console": "off" // 콘솔 사용을 허용
+  // }
 }
