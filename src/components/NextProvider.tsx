@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import { ReactQueryDevtools } from 'react-query/devtools';
 import { RecoilRoot } from 'recoil';
+import ModalMenu from './ModalMenu';
 import Sidebar from './SideBar';
 
 interface Props {
@@ -58,7 +59,7 @@ export const NextLayout = ({ children }: Props) => {
         </div>
         {/* <News /> */}
       </div>
-      {/* <ModalMenu isOpen={isOpen} onClose={() => setIsOpen(false)} /> */}
+      <ModalMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );
 };
